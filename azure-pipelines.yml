@@ -9,6 +9,12 @@ pool:
     - agent.name -equals linuxagent
 
 steps:
+
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '8' # string. Required. JDK version. Default: 8.
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: PreInstalled
 - task: Gradle@2
   inputs:
     workingDirectory: ''
