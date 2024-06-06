@@ -12,9 +12,10 @@ steps:
 
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '8' # string. Required. JDK version. Default: 8.
+    versionSpec: '17.0.10'
     jdkArchitectureOption: 'x64'
-    jdkSourceOption: PreInstalled
+    jdkSourceOption: LocalDirectory
+    jdkFile: "/usr/bin/java"
 - task: Gradle@2
   inputs:
     workingDirectory: ''
