@@ -12,7 +12,7 @@ steps:
 
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '8'
+    versionSpec: '17.0.10'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: PreInstalled
     
@@ -22,7 +22,8 @@ steps:
     workingDirectory: ''
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
+    javaHomeOption: Path
+    jdkDirectory: "/usr/bin/java"
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
