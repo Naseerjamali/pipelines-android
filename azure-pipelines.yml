@@ -15,6 +15,7 @@ steps:
     versionSpec: '17.0.10'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: LocalDirectory
+    jdkFile: "/usr/bin/java"
     
 
 - task: Gradle@2
@@ -22,8 +23,7 @@ steps:
     workingDirectory: ''
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
-    javaHomeOption: Path
-    jdkDirectory: "/usr/bin/java"
+    javaHomeOption: JDKVersion
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
