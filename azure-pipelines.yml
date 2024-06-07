@@ -15,7 +15,7 @@ steps:
     versionSpec: '17.0.10'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: LocalDirectory
-    jdkFile: "/usr/bin/java"
+    jdkFile: "/usr/share/man/man1/java.1.gz"
     
 
 - task: Gradle@2
