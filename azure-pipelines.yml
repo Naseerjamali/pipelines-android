@@ -12,10 +12,11 @@ steps:
 
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '17'
+    versionSpec: '17.0.10'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: LocalDirectory
-    jdkFile: "/usr/bin/java"
+    
+
 - task: Gradle@2
   inputs:
     workingDirectory: ''
